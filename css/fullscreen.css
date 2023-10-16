@@ -1,0 +1,88 @@
+.fullscreen {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fullscreen__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.fullscreen__card {
+    background-color: rgba(240, 248, 255, 0.325);
+    padding: 20px;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    /* flex: 0 1 33.3%; */
+    flex: 1 1 calc((100% / 3) - 30px);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+
+.fullscreen__card:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+.fullscreen__card h3 {
+    margin: 0 0 25px 0;
+    font-size: 25px;
+}
+
+.fullscreen_1 {
+    /* background-image: url("img/images/GettyImages-1468430468.jpeg") center cover no-repeat fixed; */
+    background-image: url('/img/images/GettyImages-1468430468.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.fullscreen_2 {
+    /* background-image: url("img/images/GettyImages-1468430468.jpeg") center cover no-repeat fixed; */
+    background-image: url('/img/images/successful-medical-team.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.fullscreen_3 {
+    background-color: rgb(255, 207, 207);
+}
+
+.fullscreen_4 {
+    background-color: rgb(225, 194, 255);
+}
+
+@media (max-width:767.98px) {
+    .fullscreen__card {
+        flex: 1 1 calc((100% / 2) - 15px);
+    }
+}
+
+@media (max-width:380.98px) {
+    .fullscreen__card {
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('reset.css');
+@import url('header.css');
+@import url('fullscreen.css');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    /* min-height: 100vh; */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    padding: 70px 0 0 0;
+}
